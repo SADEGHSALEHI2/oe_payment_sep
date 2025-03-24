@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="redirect_form">
+        <!-- SEP (Saman Electronic Payment) generates a unique URL for each payment request -->
+        <form t-att-action="api_url" method="post">
+            <input type="hidden" name="provider_id" t-att-value="provider_id"/>
+            <input type="hidden" name="Amount" t-att-value="Amount"/>
+            <input type="hidden" name="ResNum" t-att-value="ResNum"/>
+            <input type="hidden" name="TerminalId" t-att-value="MID"/>
+            <input type="hidden" name="RedirectURL" t-att-value="RedirectURL"/>
+        </form>
+    </template>
+</odoo>
