@@ -6,8 +6,8 @@ from werkzeug import urls
 from odoo import _, models
 from odoo.exceptions import ValidationError
 
-from odoo.addons.payment_sep import const
-from odoo.addons.payment_sep.controllers.main import SEPController
+from odoo.addons.oe_payment_sep import const
+from odoo.addons.oe_payment_sep.controllers.main import SEPController
 
 
 _logger = logging.getLogger(__name__)

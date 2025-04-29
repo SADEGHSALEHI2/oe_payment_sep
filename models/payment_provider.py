@@ -9,7 +9,7 @@ from werkzeug import urls
 from odoo import _, fields, models, service
 from odoo.exceptions import ValidationError
 
-from odoo.addons.payment_sep import const
+from odoo.addons.oe_payment_sep import const
 
 from zeep import Client
 
