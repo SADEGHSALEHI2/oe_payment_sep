@@ -4,11 +4,11 @@
         <field name="name">SEP (Saman Electronic Payment)</field>
         <field name="code">sep</field>
         <field name="redirect_form_view_id" ref="redirect_form"/>
-        <field name="image_128" type="base64" file="payment_sep/static/description/icon.png"/>
-        <field name="module_id" ref="base.module_payment_sep"/>
+        <field name="image_128" type="base64" file="oe_payment_sep/static/description/icon.png"/>
+        <field name="module_id" ref="base.module_oe_payment_sep"/>
         <field name="payment_method_ids"
                eval="[Command.set([
-                         ref('payment_sep.payment_method_sep'),
+                         ref('oe_payment_sep.payment_method_sep'),
                      ])]"
         />
     </record>
